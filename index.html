@@ -236,4 +236,33 @@
 <span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Me</span>
 </a>
 </nav>
+<script>
+// Simple habit tracker functionality
+let habits = {
+  water: false,
+  stretch: false,
+  meditate: false
+};
+function toggleHabit(habit) {
+  habits[habit] = !habits[habit];
+  updateUI();
+  saveHabits();
+}
+function updateUI() {
+  let completed = Object.values(habits).filter(h => h).length;
+  let percentage = (completed / 3) * 100;
+  alert('Progress: ' + Math.round(percentage) + '% - ' + completed + '/3 habits done');
+}
+
+function saveHabits() {
+  localStorage.setItem('morningHabits', JSON.stringify(habits));
+}
+
+function loadHabits() {
+  let saved = localStorage.getItem('morningHabits');
+  if (saved) habits = JSON.parse(saved);
+}
+
+loadHabits();
+</script>
 </body></html>

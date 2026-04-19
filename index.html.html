@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Morning Ritual</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Be+Vietnam+Pro:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#ffdfa0",
+                      "tertiary-fixed-dim": "#edbbac",
+                      "on-secondary-fixed-variant": "#5c4300",
+                      "on-secondary-container": "#6f5100",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#fdf9f0",
+                      "primary-container": "#ff8c42",
+                      "on-primary-fixed-variant": "#763300",
+                      "outline-variant": "#ddc1b3",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-background": "#1c1c17",
+                      "on-tertiary-fixed-variant": "#613e33",
+                      "outline": "#897266",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#fec330",
+                      "inverse-primary": "#ffb68d",
+                      "primary-fixed-dim": "#ffb68d",
+                      "inverse-surface": "#31312b",
+                      "secondary": "#795900",
+                      "surface-container": "#f1eee5",
+                      "tertiary": "#7b5549",
+                      "tertiary-fixed": "#ffdbd0",
+                      "on-primary-fixed": "#331200",
+                      "on-error-container": "#93000a",
+                      "on-surface": "#1c1c17",
+                      "on-tertiary-container": "#58372c",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#fdf9f0",
+                      "on-surface-variant": "#564338",
+                      "on-secondary-fixed": "#261a00",
+                      "surface-container-low": "#f7f3ea",
+                      "inverse-on-surface": "#f4f0e8",
+                      "surface-container-highest": "#e6e2d9",
+                      "on-primary-container": "#6a2d00",
+                      "surface-container-high": "#ece8df",
+                      "surface-variant": "#e6e2d9",
+                      "primary-fixed": "#ffdbc9",
+                      "on-tertiary-fixed": "#2f140b",
+                      "error": "#ba1a1a",
+                      "background": "#fdf9f0",
+                      "surface-dim": "#dddad1",
+                      "tertiary-container": "#cfa091",
+                      "secondary-fixed-dim": "#f8bd2a",
+                      "on-secondary": "#ffffff",
+                      "primary": "#9b4500",
+                      "surface-tint": "#9b4500"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Be Vietnam Pro"],
+                      "label": ["Be Vietnam Pro"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ritual-card-active {
+            background: linear-gradient(135deg, #ffffff 0%, #fef3c7 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top App Bar -->
+<nav class="flex justify-between items-center px-6 py-4 w-full bg-[#fdf9f0]/80 dark:bg-[#1c1c17]/80 backdrop-blur-3xl fixed top-0 z-50 shadow-[0_12px_32px_rgba(28,28,23,0.06)]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a smiling woman with a warm morning glow and soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKPobarYnuHaYiqlnNBH6gmnsQ3PH6yrVoUFRQnjXX_9zoNRu-IEIxf4K_Qc6KuTGk2TXD14tfa6LIuufdrH8BlcEWlJWFZvFKz7SbvYRJotwM_rCTBOW8WwvqfHcRTaDG_-Ezot9BLOswRXX6FXx7CI11Whpeg7cIJv3IFjtqyUPWnIhU0VhEnQeCOUSZ71IkyZ-stAB_26pRa7_CGviJdjcq8sRryGv7QtQ0CfiEYat7dNzgqUyQRd6DsfdSRnfDK0BnV_PunL77"/>
+</div>
+<span class="font-headline text-2xl font-bold tracking-tight text-[#9b4500] dark:text-[#ff8c42]">Morning Ritual</span>
+</div>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#f1eee5] dark:hover:bg-[#3d3d35] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined text-on-surface-variant">settings</span>
+</button>
+</nav>
+<main class="pt-28 pb-32 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Header Greeting -->
+<header class="space-y-2">
+<h1 class="font-headline text-4xl font-extrabold tracking-tight text-on-background -ml-1">Rise &amp; Shine,</h1>
+<p class="text-on-surface-variant text-lg">Your sanctuary is ready for the day.</p>
+</header>
+<!-- Sun Progress Meter Bento -->
+<section class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Decorative Light Aura -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative w-48 h-24 mb-6">
+<!-- Semicircular Track -->
+<svg class="w-full h-full" viewbox="0 0 100 50">
+<path class="text-surface-variant" d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="8"></path>
+<path d="M 10 50 A 40 40 0 0 1 65 18" fill="none" stroke="url(#sun-gradient)" stroke-linecap="round" stroke-width="10"></path>
+<defs>
+<lineargradient id="sun-gradient" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" style="stop-color:#9b4500;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-end pb-1">
+<span class="text-3xl font-headline font-bold text-primary">66%</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">complete</span>
+</div>
+</div>
+<div class="bg-surface-container-highest/50 px-4 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-sm font-medium text-on-surface">One more habit to full radiance</span>
+</div>
+</section>
+<!-- Streak Card -->
+<section class="bg-gradient-to-br from-secondary-container to-primary-container p-1 rounded-xl shadow-[0_12px_32px_rgba(155,69,0,0.15)]">
+<div class="bg-surface-container-lowest rounded-[2.8rem] px-6 py-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary-fixed rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-surface">5 mornings in a row!</h3>
+<p class="text-on-surface-variant text-sm">You're building amazing momentum.</p>
+</div>
+</div>
+<div class="text-primary font-bold text-xl">x5</div>
+</div>
+</section>
+<!-- Habit Checklist (The Rituals) -->
+<section class="space-y-4">
+<h2 class="font-headline text-xl font-bold text-on-surface px-1">Daily Rituals</h2>
+<!-- Habit: Drink Water -->
+<div class="group relative bg-surface-container rounded-lg p-6 flex items-center justify-between transition-all hover:bg-surface-container-high ritual-card-active border-2 border-primary-container/20">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-surface-container-lowest rounded-2xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">water_drop</span>
+</div>
+<div>
+<span class="block text-lg font-bold text-on-surface">Drink water</span>
+<span class="text-sm text-on-surface-variant">500ml hydration</span>
+</div>
+</div>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+</div>
+<!-- Habit: 5-min stretch -->
+<div class="group relative bg-surface-container rounded-lg p-6 flex items-center justify-between transition-all hover:bg-surface-container-high ritual-card-active border-2 border-primary-container/20">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-surface-container-lowest rounded-2xl flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl">self_improvement</span>
+</div>
+<div>
+<span class="block text-lg font-bold text-on-surface">5-min stretch</span>
+<span class="text-sm text-on-surface-variant">Awaken the body</span>
+</div>
+</div>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+</div>
+<!-- Habit: Meditate -->
+<div class="group relative bg-surface-container rounded-lg p-6 flex items-center justify-between transition-all hover:bg-surface-container-high border-2 border-transparent">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-surface-container-low rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl">spa</span>
+</div>
+<div>
+<span class="block text-lg font-bold text-on-surface">Meditate</span>
+<span class="text-sm text-on-surface-variant">Clear the mind</span>
+</div>
+</div>
+<button class="w-12 h-12 rounded-full border-2 border-outline-variant hover:border-primary flex items-center justify-center active:scale-90 transition-all">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary">circle</span>
+</button>
+</div>
+</section>
+<!-- Animation Placeholder Card -->
+<section class="mt-8 flex flex-col items-center justify-center p-12 border-2 border-dashed border-outline-variant/30 rounded-xl bg-surface-container-low/30">
+<div class="w-20 h-20 bg-secondary-fixed/20 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-4xl">celebration</span>
+</div>
+<p class="text-on-surface-variant text-sm font-medium text-center max-w-[200px]">Complete all habits to witness the rising sun</p>
+</section>
+<!-- Footer Action -->
+<footer class="pt-8 flex justify-center">
+<button class="px-8 py-4 rounded-full bg-surface-container-high text-primary font-bold flex items-center gap-2 hover:bg-surface-container-highest transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">restart_alt</span>
+                Reset for tomorrow
+            </button>
+</footer>
+</main>
+<!-- Bottom Nav Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-end px-4 pb-8 h-24 bg-[#fdf9f0]/90 dark:bg-[#1c1c17]/90 backdrop-blur-2xl">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#9b4500] to-[#ff8c42] text-white rounded-full w-14 h-14 shadow-lg scale-110" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-0.5 hidden">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#564338] dark:text-[#e6e2d9] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Journal</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#564338] dark:text-[#e6e2d9] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Insights</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#564338] dark:text-[#e6e2d9] opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Me</span>
+</a>
+</nav>
+</body></html>
